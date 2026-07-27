@@ -8,14 +8,23 @@
     <title>2009/2010 cup1-men-1500</title>
 
 <style>
-.season-card{margin:24px 0;padding:22px;border:1px solid #d9dee7;border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.06);}
+.season-card{margin:24px 12px;padding:22px;border:1px solid #d9dee7;
+border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.06);}
 .season-card h2{margin:0 0 16px;font-size:28px;}
 .results-wrap{overflow-x:auto;}
 .results-table{width:100%;border-collapse:collapse;min-width:760px;}
-.results-table th,.results-table td{padding:12px 14px;border:1px solid #dfe3ea;text-align:center;vertical-align:middle;line-height:1.55;}
+.results-table th,.results-table td{padding:12px 14px;border:1px solid #dfe3ea;
+text-align:center;vertical-align:middle;line-height:1.55;}
 .results-table th{background:#f3f6fa;font-weight:700;}
 .results-table td:first-child{text-align:left;font-weight:600;white-space:nowrap;}
-.results-table tr:nth-child(even) td{background:#fafbfd;}
+.results-table tr:nth-child(even) td{background:#fafbfd;} <!--隔行换色-->
+/*=========手机专用=======*/
+@media(max-width:600px){
+.season-card{margin:20px 10px; padding:12px;}
+.season-card h2{font-size: 22px;}
+.results-table{min-width: 0;table-layout: fixed;}
+.results-table th,.results-table td{padding:6px 2px;font-size: 11px;}
+}
 </style>
 
 </head>
